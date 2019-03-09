@@ -66,3 +66,38 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+# Notes
+- Tutorial Videos: https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
+
+## What is React
+ - Open source library for building user interfaces
+ - NOT a Framework
+ - Focus on UI, Does Not focus on the other aspects of application like routing and HTTP requests
+ - Rich ecosystem
+
+## Why Learn React?
+ - Created and maintain my Facebook
+ - Huge community
+ - More thatn 100K starts on Github
+ - In demand skillset
+ - Seamlessly integrate react into any of your applications.
+ - Portion of your page or a complete page or even an entire application itself.
+ - React native for mobile applications
+
+## React Component Based Architerture
+ - This let you break down your application into small encapsulated parts which can then be composed to make more complex UIs
+ - EX: A traditional website can be broken down into header, side nav, main content, and footer. Each section represents a component which when composed in the right way make up the entire website.
+ - Component also make it possible to write reusable 
+ - Resuable Code
+    - Could have the component for an article on react and the same component can be used for articales on angular or view by simply passing the right data into the artical component.
+
+## React is Declarative
+- Tell React what you want and React with its react DOM library will build the actual UI. This is the declarative paradigm now this is in contrast with the imperative paradigm we are usually used to which implements algorithems in explicit steps. 
+- React will handle efficiently updating and rendering of the components
+- DOM updates are handles gracefully in React.
+
+## Prerequisites 
+- HTML, CSS and JavaScript fundamentals
+- ES6 - let & const, arrow functions, template literals, default parameters, object literals, rest and spread operators and destructuring assignment.
+- JavaScript - keywords: this, filter, map and reduce.
