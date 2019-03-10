@@ -7,7 +7,7 @@ import React from 'react';
 // }
 
 //  Using ES6
-const Greet = () => <h1>Hello Jim</h1>
+const Greet = () => <h3>Hello Jim</h3> // This is JSX not HTML
 
 // This is a name export. 
 // Using this no need to write export default Greet

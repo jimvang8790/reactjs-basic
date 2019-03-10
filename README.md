@@ -123,11 +123,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ## Components
 - In React a component represents a part of the user interface
 - EX: A React project will usually have about 5 components
-    1) Header
-    2) SideNav
-    3) MainContent
-    4) Footer
-    5) Root(App) Component wrapping everything
+    1. Header
+    2. SideNav
+    3. MainContent
+    4. Footer
+    5. Root(App) Component wrapping everything
 - Each components describe only a part of the user interface, however all the components come together to make up the entire application.
 - Components are also re-usable, the same component can be used with different properties to display different information
 - Components can also contain other components, like App component containing all the other component
@@ -156,3 +156,20 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Functional Components
 - Functional components are JavaScript functions, they can optionally receive an object of properties which is referred to as props and return HTML which describes the UI. Now the HTML is actually known as JSX. In summary they accept an input of properties and returns HTML that describles the UI.
+
+## Class Components
+- Class components are ES6 classes similar to a functional components a class component can optionally receive props as input and return HTML. 
+- Can also maintain a private internal state. It can maintain some information which is private to that component and use that information to describe the user interface.
+
+## Functional vs Class Components
+- Functional components are simple functions, receiving props and returning a declaration 
+- Use Functional components as much as possible meaning if it is possible to create a component with both the approach always use functional component.
+- One advantage of Function components over a Class component is the absence of `this` keyword.
+- Second advantage of Function components is you'll be forced to think of a solution without having to use `state` if you have a number of components each with their own private state maintenence and debugging your application can be difficult. Functional components tend to be without any complicated logic and are mainly responsible for the UI 
+- Functional components are also known as Stateless/Dumb/Presentational components
+
+- Class Components are more feature rich
+- Class Components maintain their own private date - state
+- Class components can contain complex UI logic
+- Class components provide lifescycle hooks
+- Class components aka Stateful/Smart/Container
