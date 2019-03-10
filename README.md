@@ -119,3 +119,40 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - The `Index.css` is the styles for the body tag.
 - The `App.test.js` is for unit test.
 - The `serviceWorker.js` is for progressive web app but can be ignore for now.
+
+## Components
+- In React a component represents a part of the user interface
+- EX: A React project will usually have about 5 components
+    1) Header
+    2) SideNav
+    3) MainContent
+    4) Footer
+    5) Root(App) Component wrapping everything
+- Each components describe only a part of the user interface, however all the components come together to make up the entire application.
+- Components are also re-usable, the same component can be used with different properties to display different information
+- Components can also contain other components, like App component containing all the other component
+
+## Component in Code 
+- A component code is usually placed in a JavaScript file for ex: the App component is placed in App.js
+- Can also have have component files with .jsx extension 
+- So a component is basically the code inside a .js file
+
+## 2 Component Types in React
+1) Stateless Functional Component = literally JavaScript functions that return HTML which describes the UI
+    ex: 
+    ```javascript
+    function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
+    }
+```
+    this will return a h1 tag saying Hello, name
+2) Stateful Class Component = regular ES6 classes extending component class. Must contain a render method returning HTML
+    ex: 
+    ```
+    class Welcome extends React.Component {
+        render() {
+            return <h1>Hello, {this.props.name}</h1>;
+        }
+    }
+```
+    
