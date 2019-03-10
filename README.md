@@ -101,3 +101,21 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - HTML, CSS and JavaScript fundamentals
 - ES6 - let & const, arrow functions, template literals, default parameters, object literals, rest and spread operators and destructuring assignment.
 - JavaScript - keywords: this, filter, map and reduce.
+
+# Getting Started
+- To create a new react repo run command: $ `npx create-react-app <app-name>`
+- To start app run the command: `npm start`
+- npx is a npm package runner 
+
+## Public Folder
+- The index.html will be the only html file in your React project, hence a single page
+- The ```<div id="root"></div>``` responsible for the UI located in public/index.html
+
+## Src Folder
+- Starting point is `index.js` file. This file specifies the root component which is App component and the DOM element which will control by React.
+- The DOM element is the element with the id='root', which is the div element in the index.html file. So the App component is render inside the ```<div id="root"></div>```element.
+- In the `App.js` the App component is also present and is responsible for the HTML being displayed in the browser.
+- The `App.css` is the styles for the App component.
+- The `Index.css` is the styles for the body tag.
+- The `App.test.js` is for unit test.
+- The `serviceWorker.js` is for progressive web app but can be ignore for now.
