@@ -153,5 +153,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
             return <h1>Hello, {this.props.name}</h1>;
         }
     }
-```
-
