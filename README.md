@@ -144,7 +144,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     function Welcome(props) {
         return <h1>Hello, {props.name}</h1>;
     }
-```
 
 2) Stateful Class Component = regular ES6 classes extending component class. Must contain a render method returning HTML
     ex: 
