@@ -173,3 +173,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - Class components can contain complex UI logic
 - Class components provide lifescycle hooks
 - Class components aka Stateful/Smart/Container
+
+## Hooks 
+- Hooks are a feature proposal that lets you use state and other React features without writing a class.
+- So now states and lifescycle hooks can be used by Functional components
+- Hooks have no breaking changes
+- Completely opt-in & 100% backwards-compatible
+- Component Types = Functional components and Class components.
+- Using state, lifecycle methods and `this` binding.
