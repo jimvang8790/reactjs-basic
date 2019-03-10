@@ -153,3 +153,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
             return <h1>Hello, {this.props.name}</h1>;
         }
     }
+
+## Functional Components
+- Functional components are JavaScript functions, they can optionally receive an object of properties which is referred to as props and return HTML which describes the UI. Now the HTML is actually known as JSX. In summary they accept an input of properties and returns HTML that describles the UI.
