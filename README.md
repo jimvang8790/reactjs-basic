@@ -181,3 +181,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - Completely opt-in & 100% backwards-compatible
 - Component Types = Functional components and Class components.
 - Using state, lifecycle methods and `this` binding.
+
+## JSX
+- JavaScript XML (JSX) - Extension to the JavaScript language syntax.
+- Write XML - like code for elements and components.
+- JSX tags have a tag name, attributes, and children.
+- JSX is not a necessity to write React applications.
+- JSX makes your react code simpler and elegant.
+- JSX ultimately transpiles to pure JavaScript which is understood by the browsers.
+
+## JSX Differences
+- Class replaced by className
+- for replaced by htmlFor
+- camelCase property naming convention
+    - onclick replaced by onClick
+    - tabindex replaced by tabIndex
