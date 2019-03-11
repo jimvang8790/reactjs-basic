@@ -198,6 +198,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     - tabindex replaced by tabIndex
 
 ## Props
-- Props is just an object that contains the attributes and their vaules which has been passed from the parent component
+- Props is just an object that contains the attributes and their vaules which has been passed from the parent component.
 - Props are immutable meaning their values can not be change.
-    - Reserved Children Property - sometimes it is possible you might not have an idea as to what content is being pass in but you want to render that unknown content. To do this specifly the content between the opening and closing tag of the component and retrieving it using the reserved children property
+    - Reserved Children Property - sometimes it is possible you might not have an idea as to what content is being pass in but you want to render that unknown content. To do this specifly the content between the opening and closing tag of the component and retrieving it using the reserved children property.
