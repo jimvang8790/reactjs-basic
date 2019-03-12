@@ -4,6 +4,7 @@ import './App.css';
 import Greet from './components/Greet'; // Import Greet functional component from the Greet.js file in the Components folder 
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
+import Message from './components/Message';
 
 class App extends Component {
   render() {
@@ -44,6 +45,10 @@ class App extends Component {
         {/* JSX */}
         <h1>JSX</h1>
         <Hello />
+
+        {/* State */}
+        <h1>State</h1>
+        <Message/>
       </div>
     );
   }

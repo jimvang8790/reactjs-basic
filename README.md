@@ -201,3 +201,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - Props is just an object that contains the attributes and their vaules which has been passed from the parent component.
 - Props are immutable meaning their values can not be change.
     - Reserved Children Property - sometimes it is possible you might not have an idea as to what content is being pass in but you want to render that unknown content. To do this specifly the content between the opening and closing tag of the component and retrieving it using the reserved children property.
+
+## Props Vs State
+- Props get passed to the component 
+    - Ex: Function parameters
+- Props, because a parent usually passes down the props to the child component, Props are immutable the parent owns the props and can't be changed by the children
+- Props, functional components props can be accessed using the props parameter and in Class component props can be accessed using this.props
+
+- State is managed within the component
+    - Ex: Variables delcared in the function body
+- State is managed within the component and hence the component has full control to change the state
+- State, useState Hook - Functionals component and uses this.state - Class components 
+- State is nothing but an object that is privately maintained inside a component
+- State can influence what is rendered in the browser
+- State can be changed within the component

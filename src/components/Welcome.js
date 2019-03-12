@@ -17,7 +17,9 @@ import React, {Component} from 'react';
 // Accessing the props with the 'this' keyword
 class Welcome extends Component {
     render() {
-        return <h3>Welcome {this.props.name} also know as {this.props.heroName}</h3>
+        return (
+            <h3>Welcome {this.props.name} also know as {this.props.heroName}</h3>
+        )
     }
 }
 
