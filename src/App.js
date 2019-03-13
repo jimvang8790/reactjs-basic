@@ -5,6 +5,7 @@ import Greet from './components/Greet'; // Import Greet functional component fro
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
+import Counter from './components/Counter';
 
 class App extends Component {
   render() {
@@ -49,6 +50,10 @@ class App extends Component {
         {/* State */}
         <h1>State</h1>
         <Message/>
+
+        {/* setState */}
+        <h1>setState</h1>
+        <Counter/>
       </div>
     );
   }
