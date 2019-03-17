@@ -23,4 +23,25 @@ class Welcome extends Component {
     }
 }
 
+// Destructuring props and state
+// class Welcome extends Component {
+//     render() {
+//         const {name, heroName} = this.props
+//         return (
+//             <h3>Welcome {name} also know as {heroName}</h3>
+//         )
+//     }
+// }
+
+// Number of state properties you can destructure them in a similar way
+// class Welcome extends Component {
+//     render() {
+//         const {name, heroName} = this.props
+//         const {state1, state2} = this.state
+//         return (
+//             <h3>Welcome {name} also know as {heroName}</h3>
+//         )
+//     }
+// }
+
 export default Welcome

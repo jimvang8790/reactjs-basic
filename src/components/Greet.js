@@ -19,19 +19,46 @@ import React from 'react';
 // }
 
 // Props with Reserved Children Property
-const Greet = (props) => {
-    console.log(props)
-    return (
-        <div>
-            <h3>Hello {props.name}, or should I say {props.heroName}.</h3>
-            {props.children}
-        </div>
-    )
-}
+// const Greet = (props) => {
+//     console.log(props)
+//     return (
+//         <div>
+//             <h3>Hello {props.name}, or should I say {props.heroName}.</h3>
+//             {props.children}
+//         </div>
+//     )
+// }
 
 // This is a name export. 
 // Using this no need to write export default Greet
 // export const Greet = () => <h1>Hello Jim</h1>
+
+// Destructuring props and state
+// Two ways to destructure a functional component
+// 1) destructure it in the function parameter itself
+// we are extracting name and hero name from the props object in the JSX, we can now simply use name and hero name instead of props.name and props.heroName
+
+// const Greet = ({name, heroName, children}) => {
+//     return (
+//         <div>
+//             <h3>Hello {name}, or should I say {heroName}.</h3>
+//             {children}
+//         </div>
+//     )
+// }
+
+// 2) destructuring it in the function body
+// so go back and name the parameter as props and in the body const {name, heroName} = props
+
+const Greet = (props) => {
+    const {name, heroName, children} = props
+    return (
+        <div>
+            <h3>Hello {name}, or should I say {heroName}.</h3>
+            {children}
+        </div>
+    )
+}
 
 // Now export it, to use in App.js
 export default Greet 
