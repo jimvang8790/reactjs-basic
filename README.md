@@ -85,6 +85,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
  - Portion of your page or a complete page or even an entire application itself.
  - React native for mobile applications
 
+## React Snippet
+- Need the extend `ES7 React/Redux/GraphQL/React-Native snippets` 
+- `rfce` short hand for creating a functional component file structure
+- `rce` short hand for creating a class component file structure
+
 ## React Component Based Architerture
  - This let you break down your application into small encapsulated parts which can then be composed to make more complex UIs
  - EX: A traditional website can be broken down into header, side nav, main content, and footer. Each section represents a component which when composed in the right way make up the entire website.
