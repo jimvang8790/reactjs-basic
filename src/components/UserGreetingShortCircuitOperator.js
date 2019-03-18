@@ -15,7 +15,10 @@ class UserGreetingShortCircuitOperator extends Component {
     }
     
   render() {
-    return this.state.isLoggedIn && <div>Welcome Jimmi</div>
+    return this.state.isLoggedIn && 
+        <div>
+            <h3>Welcome Jimmi</h3>
+        </div>
   }
 }
 

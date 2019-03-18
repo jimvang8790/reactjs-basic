@@ -14,6 +14,8 @@ import UserGreetingIfElse from './components/UserGreetingIfElse';
 import UserGreetingElementVariables from './components/UserGreetingElementVariables';
 import UserGreetingTerneryConditionalOperator from './components/UserGreetingTerneryConditionalOperator';
 import UserGreetingShortCircuitOperator from './components/UserGreetingShortCircuitOperator';
+import NameList from './components/NameList';
+// import Person from './components/Person'; no need to import this anymore since we import it in NameList.js file
 
 class App extends Component {
   render() {
@@ -94,6 +96,15 @@ class App extends Component {
         {/* Conditional Rendering (Short Circuit Operator) */}
         <h1>Conditional Rendering (Short Circuit Operator)</h1>
         <UserGreetingShortCircuitOperator/>
+
+        {/* List Rendering Name List */}
+        <h1>List Rendering Name List</h1>
+        <NameList/>
+        
+        {/* no need to render this anymore since we render it in NameList.js file */}
+        {/* List Rendering Persons List */}
+        {/* <h1>List Rendering Persons List</h1>
+        <Person/> */}
       </div>
     );
   }
