@@ -89,6 +89,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - Need the extend `ES7 React/Redux/GraphQL/React-Native snippets` 
 - `rfce` short hand for creating a functional component file structure
 - `rce` short hand for creating a class component file structure
+- `rconst` will create a constructor 
 
 ## React Component Based Architerture
  - This let you break down your application into small encapsulated parts which can then be composed to make more complex UIs
@@ -225,3 +226,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - Always make use of setState and never modify the state directly
 - Code has to be executed after the state has been updated? Place that code in the call back function which is the second argument to the setState method.
 - When you have to update state based on the previous state value, pass in a function as an argument instead of the regular object.
+

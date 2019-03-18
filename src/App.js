@@ -8,6 +8,7 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 class App extends Component {
   render() {
@@ -64,6 +65,10 @@ class App extends Component {
         {/* Event Handling */}
         <h1>Event Handling for Class Component</h1>
         <ClassClick/>
+
+        {/* Binding Event Handlers */}
+        <h1>Binding Event Handlers</h1>
+        <EventBind/>
       </div>
     );
   }
