@@ -227,3 +227,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - Code has to be executed after the state has been updated? Place that code in the call back function which is the second argument to the setState method.
 - When you have to update state based on the previous state value, pass in a function as an argument instead of the regular object.
 
+## Conditional Rendering
+- Hide/Show HTML based on a certain condition
+- 4 ways fo approach
+    1) if/elese
+    2) Elemnent Variables
+    3) Ternery Conditional Operator (Best Approach to follow)
+    4) Short Circuit Operator
+

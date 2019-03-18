@@ -10,6 +10,10 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import UserGreetingIfElse from './components/UserGreetingIfElse';
+import UserGreetingElementVariables from './components/UserGreetingElementVariables';
+import UserGreetingTerneryConditionalOperator from './components/UserGreetingTerneryConditionalOperator';
+import UserGreetingShortCircuitOperator from './components/UserGreetingShortCircuitOperator';
 
 class App extends Component {
   render() {
@@ -74,6 +78,22 @@ class App extends Component {
         {/* Methods as props (Child component communicating to Parent component) Event Handling */}
         <h1>Methods as props (Child component communicating to Parent component) Event Handling</h1>
         <ParentComponent/>
+
+        {/* Conditional Rendering (if/else) */}
+        <h1>Conditional Rendering (if/else)</h1>
+        <UserGreetingIfElse/>
+
+        {/* Conditional Rendering (ElementVariables) */}
+        <h1>Conditional Rendering (ElementVariables)</h1>
+        <UserGreetingElementVariables/>
+
+        {/* Conditional Rendering (Ternery Conditional Operator) */}
+        <h1>Conditional Rendering (Ternery Conditional Operator)</h1>
+        <UserGreetingTerneryConditionalOperator/>
+
+        {/* Conditional Rendering (Short Circuit Operator) */}
+        <h1>Conditional Rendering (Short Circuit Operator)</h1>
+        <UserGreetingShortCircuitOperator/>
       </div>
     );
   }
