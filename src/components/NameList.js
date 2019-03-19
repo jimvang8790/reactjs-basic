@@ -4,10 +4,12 @@ import Person from './Person';
 
 function NameList() {
     // 1) create an array of names
-    const names = ['Bruce', 'Clark', 'Diana']
+    const names = ['Bruce', 'Clark', 'Diana', 'Bruce']
     // to keep the return statement simple by moving out the list rendering logic
     // the {names.map(name => <h3>{name}</h3>)} was inside the render
-    const nameList = names.map(name => <h3>{name}</h3>)
+    // Index as key anti-pattern
+    // key={name} is not possible since there are dublicates of the same name, so we can add index, which is always unique
+    const nameList = names.map((name, index) => <h3 key={index}>{index}. {name}</h3>)
 
     const persons = [
         {
@@ -34,9 +36,10 @@ function NameList() {
     ]
     // key can be anything as long as it's unique
     const personList = persons.map(person => <Person key={person.id} person={person}/>)
+    // const nameList = names.map(name => <h2>{name}</h2>)
   return (
     <div>
-      <h3>{nameList}</h3>
+      {nameList}
       <h3>{personList}</h3>
     </div>
   )

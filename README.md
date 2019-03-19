@@ -240,3 +240,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - Keys give the elements a stable identity
 - Keys help React identify which items have changed, are added, or removed
 - Help in efficient update of the UI
+
+## Index as Key
+- When to use index as key?
+    1. The items in your list do not have an unique id.
+    2. The list is a static list and will not change.
+    3. The list will never be reordered or filtered.
