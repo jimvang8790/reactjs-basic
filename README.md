@@ -235,3 +235,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     3) Ternery Conditional Operator (Best Approach to follow)
     4) Short Circuit Operator
 
+## Lists and Keys
+- A 'key' is a special string attribute you need to include when creating lists of elements 
+- Keys give the elements a stable identity
+- Keys help React identify which items have changed, are added, or removed
+- Help in efficient update of the UI
