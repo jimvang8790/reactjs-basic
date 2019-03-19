@@ -32,7 +32,8 @@ function NameList() {
             hero: 'Wonderwoman'
         }
     ]
-    const personList = persons.map(person => <Person person={person}/>)
+    // key can be anything as long as it's unique
+    const personList = persons.map(person => <Person key={person.id} person={person}/>)
   return (
     <div>
       <h3>{nameList}</h3>
