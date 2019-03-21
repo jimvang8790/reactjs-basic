@@ -16,6 +16,11 @@ import UserGreetingTerneryConditionalOperator from './components/UserGreetingTer
 import UserGreetingShortCircuitOperator from './components/UserGreetingShortCircuitOperator';
 import NameList from './components/NameList';
 // import Person from './components/Person'; no need to import this anymore since we import it in NameList.js file
+import StyleSheet from './components/StyleSheet';
+import StyleSheetPropsState from './components/StyleSheetPropsState';
+import InlineStyling from './components/InlineStyling';
+// import './appStyles.css'; // importing from a regular style sheet
+// import styles from './appStyles.module.css'; // importing from a module style sheet
 
 class App extends Component {
   render() {
@@ -105,6 +110,24 @@ class App extends Component {
         {/* List Rendering Persons List */}
         {/* <h1>List Rendering Persons List</h1>
         <Person/> */}
+
+        {/* 1st Approach to styling React Component */}
+        <h1>1st Approach to styling React Component</h1>
+        <StyleSheet/>
+
+        {/* 1st Approach to styling React Component using Props and States */}
+        <h1>1st Approach to styling React Component using Props and States</h1>
+        <StyleSheetPropsState secondary={true}/>
+
+        {/* 2nd Approach to styling React Component with Inline Styling */}
+        <h1>2nd Approach to styling React Component with Inline Styling</h1>
+        <InlineStyling/>
+
+        {/* 3rd Approach to styling React Component with Module */}
+        <h1>3rd Approach to styling React Component with Module</h1>
+        <h3>Getting an console error, have Doua look into this</h3>
+        {/* <h1 className="error">Regular Style (Error)</h1> */}
+        {/* <h1 className={styles.success}>Module Style (success)</h1> */}
       </div>
     );
   }

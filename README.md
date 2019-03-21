@@ -246,3 +246,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     1. The items in your list do not have an unique id.
     2. The list is a static list and will not change.
     3. The list will never be reordered or filtered.
+
+## Styling React Components
+1. CSS stylesheets
+2. Inline styling
+3. CSS Modules
+4. CSS in JS Libaries(Style Components)

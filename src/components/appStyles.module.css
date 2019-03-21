@@ -1,0 +1,5 @@
+/* 3rd approach to styling React Component */
+/* Notice how this file's name has a .module.css */
+.success {
+    color: yellow;
+}

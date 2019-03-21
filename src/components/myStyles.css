@@ -1,0 +1,5 @@
+/* 1st approach to styling React Components */
+/* inorder to use this stylesheet we'll have to import it to StyleSheet.js */
+.primary {
+    color: orange;
+}

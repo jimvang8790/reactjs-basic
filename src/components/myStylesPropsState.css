@@ -1,0 +1,10 @@
+/* 1st approach to styling React Components */
+/* inorder to use this stylesheet we'll have to import it to StyleSheetPropsState.js */
+.secondary {
+    color: green;
+}
+
+/* specify multiple classes the simplest way is to use template literals */
+.font-xl {
+    font-size: 72px;
+}
