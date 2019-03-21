@@ -21,6 +21,7 @@ import StyleSheetPropsState from './components/StyleSheetPropsState';
 import InlineStyling from './components/InlineStyling';
 // import './appStyles.css'; // importing from a regular style sheet
 // import styles from './appStyles.module.css'; // importing from a module style sheet
+import Form from './components/Form';
 
 class App extends Component {
   render() {
@@ -128,6 +129,10 @@ class App extends Component {
         <h3>Getting an console error, have Doua look into this</h3>
         {/* <h1 className="error">Regular Style (Error)</h1> */}
         {/* <h1 className={styles.success}>Module Style (success)</h1> */}
+
+        {/* Form Component */}
+        <h1>Form Component</h1>
+        <Form/>
       </div>
     );
   }
