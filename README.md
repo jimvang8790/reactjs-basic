@@ -252,3 +252,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 2. Inline styling
 3. CSS Modules
 4. CSS in JS Libaries(Style Components)
+
+## Lifecycle Methods
+- 4 phase
+    1. Mounting - When an instance of a component is being created and inserted into the DOM. 4 methods to Mounting phase
+        1. constructor
+        2. static getDerviedStateFromProps
+        3. render
+        4. componentDidMount
+    2. Update - When a component is being re-rendered as a result of changes to either its props or state. 5 methods to Update phase
+        1. static getDerviedStateFromProps
+        2. shouldComponentUpdate
+        3. render
+        4. getSnapShotBeforeUpdate
+        5. componentDidUpdate
+    3. Unmounting - When a component is being remove from the DOM. 1 method to Unmounting
+        1. componentWillUnmount
+    4. Error Handling - When there is an error during rendering, in a lifecycle method, or in the constructor of any child component. 2 method to Error Handling
+        1. static getDerivedStateFromError
+        2. componentDidCatch
+    
