@@ -264,7 +264,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
         1. static getDerviedStateFromProps
         2. shouldComponentUpdate
         3. render
-        4. getSnapShotBeforeUpdate
+        4. getSnapshotBeforeUpdate
         5. componentDidUpdate
     3. Unmounting - When a component is being remove from the DOM. 1 method to Unmounting
         1. componentWillUnmount
@@ -272,7 +272,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
         1. static getDerivedStateFromError
         2. componentDidCatch
 
-## Mounting Lifecycle Method
+## Mounting Lifecycle Methods
 1. Constructor (props) - A special function that will get call whenever a new component is created. Constructor are good for initializing state and binding the event handlers. Do not cause side effect. Ex: HTTP request. Keep in mind that when using constructor, you have to call a special function called super(props) and this will call the base class constructor. In our component we have access to this.props only after we have initially called super passing in the props as an arguement. Another point is that constructor is the only place where you are excepted to change or set the state by directly overwriting this.state fields in all other scenarios you have to use this.setState. As a constructor set initial state find event handlers and don't cause any side effect like making Ajax calls for exmaple. 
 
 2. static getDerviedStateFromProps (props, state) - Used when the state of the component depends on changes in props over time. Use this method to set the state. Do not cause side effect. Ex: HTTP request. 
@@ -280,3 +280,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 3. render() - The only required method. Read props & state and return JSX. Do not change state of interact with DOM or make Ajax calls. Children components lifecycle methods are also executed 
 
 4. componentDidMount() - Invoked immediately after a component and all its children components have been rendered to the DOM. Does cause sied effects. Ex: Interact with the DOM or perform any Ajax calls to load data.      
+
+## Update Lifecycle Methods
+1. static getDerviedStateFromProps(props, state) - Method is called everytime a component is re-rendered. This method is used when the state depends on the props of the component, so set the state. Do not cause side effect. Ex: HTTP request.  
+
+2. shouldComponentUpdate(nextProps, nextState) - Dictates if the component should re-render or not. This method is for performance optimization. Do not cause side effect. Ex: HTTP request or calling the setState method. 
+
+3. render() - Only required method. Read props & state and return JSX. Do not change the state or interact with DOM or make ajax calls. 
+
+4. getSnapshotBeforeUpdate(prevProps, prevState) - Called right before the changes from the virtual DOM are to be reflected in the DOM. Capture some information from the DOM. Method will either return null or a value. Return value will be passed as the third parameter to the next method. 
+
+5. componentDidUpdate(prevProps, prevState, snapShot) - Called after the render is finish in the re-render cycles. Can cause side effects, meaning you can make Ajax calls.
+
+## Unmounting Phase Method
+1. componentWillUnmount() - Method is invoked immediately before a component is unmounted and destroyed. Cancelling any network request, removing event handlers, cancelling any subscriptions and also invalidating timers. Do not call the setState method.
+
+## Error Handling Phase Method
+1. static getDerivedStateFromError(error)
+2. componentDidCatch(error, info)
+ - When there is an error either during rendering, in a lifecycle method, or in the constructor of any child component. 

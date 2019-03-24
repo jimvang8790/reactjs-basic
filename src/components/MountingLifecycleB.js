@@ -20,12 +20,26 @@ class MountingLifecycleB extends Component {
       componentDidMount() {
           console.log('MountingLifecycleB componentDidMount ')
       }
+
+      shouldComponentUpdate() {
+        console.log('MountingLifecycleB shouldComponentUpdate')
+        return true
+      }
+  
+      getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log('MountingLifecycleB getSnapshotBefore')
+        return null
+      }
+  
+      componentDidUpdate() {
+        console.log('MountingLifecycleB componentDidUpdate')
+      }
       
     render() {
         console.log('MountingLifecycleB render')
       return (
         <div>
-          <h3>MountingLifecycleB</h3>
+          
         </div>
       )
     }

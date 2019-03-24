@@ -1,4 +1,5 @@
 // Mounting phase Lifecycle
+// Updating phase Lifecycle
 import React, { Component } from 'react'
 import MountingLifecycleB from './MountingLifecycleB';
 
@@ -20,6 +21,26 @@ class MountingLifecycleA extends Component {
     componentDidMount() {
         console.log('MountingLifecycleA componentDidMount ')
     }
+
+    shouldComponentUpdate() {
+      console.log('MountingLifecycleA shouldComponentUpdate')
+      return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+      console.log('MountingLifecycleA getSnapshotBefore')
+      return null
+    }
+
+    componentDidUpdate() {
+      console.log('MountingLifecycleA componentDidUpdate')
+    }
+
+    changeState = () => {
+      this.setState({
+        name: 'Codevolution'
+      })
+    }
     
   render() {
       console.log('MountingLifecycleA render')
@@ -28,6 +49,7 @@ class MountingLifecycleA extends Component {
           <div>
             <h3>MountingLifecycleA</h3>
           </div>
+          <button onClick={this.changeState}>Change State</button>
           {/* Adding MountingLifecycleB here */}
           <MountingLifecycleB/>
       </div>

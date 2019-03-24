@@ -136,8 +136,8 @@ class App extends Component {
         <h1>Form Component</h1>
         <Form/>
 
-        {/* Mounting Phase Lifecycle A */}
-        <h1>Mounting Phase Lifecycle A</h1>
+        {/* Lifecycle A */}
+        <h1>Lifecycle A</h1>
         <MountingLifecycleA/>
 
         {/* Mounting Phase Lifecycle B with child component */}
