@@ -271,4 +271,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     4. Error Handling - When there is an error during rendering, in a lifecycle method, or in the constructor of any child component. 2 method to Error Handling
         1. static getDerivedStateFromError
         2. componentDidCatch
-    
+     
