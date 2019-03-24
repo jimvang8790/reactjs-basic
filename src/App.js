@@ -22,6 +22,8 @@ import InlineStyling from './components/InlineStyling';
 // import './appStyles.css'; // importing from a regular style sheet
 // import styles from './appStyles.module.css'; // importing from a module style sheet
 import Form from './components/Form';
+import MountingLifecycleA from './components/MountingLifecycleA';
+import MountingLifecycleB from './components/MountingLifecycleB';
 
 class App extends Component {
   render() {
@@ -133,6 +135,14 @@ class App extends Component {
         {/* Form Component */}
         <h1>Form Component</h1>
         <Form/>
+
+        {/* Mounting Phase Lifecycle A */}
+        <h1>Mounting Phase Lifecycle A</h1>
+        <MountingLifecycleA/>
+
+        {/* Mounting Phase Lifecycle B with child component */}
+        {/* <h1>Mounting Phase Lifecycle B with child componBnt</h1> */}
+        {/* <MountingLifecycleB/> */}
       </div>
     );
   }

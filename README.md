@@ -271,4 +271,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     4. Error Handling - When there is an error during rendering, in a lifecycle method, or in the constructor of any child component. 2 method to Error Handling
         1. static getDerivedStateFromError
         2. componentDidCatch
-     
+
+## Mounting Lifecycle Method
+1. Constructor (props) - A special function that will get call whenever a new component is created. Constructor are good for initializing state and binding the event handlers. Do not cause side effect. Ex: HTTP request. Keep in mind that when using constructor, you have to call a special function called super(props) and this will call the base class constructor. In our component we have access to this.props only after we have initially called super passing in the props as an arguement. Another point is that constructor is the only place where you are excepted to change or set the state by directly overwriting this.state fields in all other scenarios you have to use this.setState. As a constructor set initial state find event handlers and don't cause any side effect like making Ajax calls for exmaple. 
+
+2. static getDerviedStateFromProps (props, state) - Used when the state of the component depends on changes in props over time. Use this method to set the state. Do not cause side effect. Ex: HTTP request. 
+
+3. render() - The only required method. Read props & state and return JSX. Do not change state of interact with DOM or make Ajax calls. Children components lifecycle methods are also executed 
+
+4. componentDidMount() - Invoked immediately after a component and all its children components have been rendered to the DOM. Does cause sied effects. Ex: Interact with the DOM or perform any Ajax calls to load data.      
